@@ -1,0 +1,18 @@
+:action (refuel a1 c4) start: 05/06/2007 08:00:00 end: 09/06/2007 12:00:00
+:action (zoom a1 c4 c1) start: 09/06/2007 12:00:00 end: 09/06/2007 20:00:00
+:action (board p1 a1 c1) start: 09/06/2007 20:00:00 end: 09/06/2007 21:00:00
+:action (refuel a1 c1) start: 09/06/2007 21:00:00 end: 22/06/2007 09:00:00
+:action (zoom a1 c1 c5) start: 22/06/2007 09:00:00 end: 22/06/2007 14:00:00
+:action (debark p1 a1 c5) start: 22/06/2007 14:00:00 end: 22/06/2007 15:00:00
+:action (refuel a1 c5) start: 22/06/2007 15:00:00 end: 30/06/2007 23:00:00
+:action (zoom a1 c5 c2) start: 30/06/2007 23:00:00 end: 01/07/2007 07:00:00
+:action (board p2 a1 c2) start: 01/07/2007 07:00:00 end: 01/07/2007 08:00:00
+:action (refuel a1 c2) start: 01/07/2007 08:00:00 end: 13/07/2007 20:00:00
+:action (zoom a1 c2 c5) start: 13/07/2007 20:00:00 end: 14/07/2007 04:00:00
+:action (debark p2 a1 c5) start: 14/07/2007 04:00:00 end: 14/07/2007 05:00:00
+:action (refuel a1 c5) start: 14/07/2007 05:00:00 end: 26/07/2007 17:00:00
+:action (zoom a1 c5 c3) start: 26/07/2007 17:00:00 end: 27/07/2007 01:00:00
+:action (board p3 a1 c3) start: 27/07/2007 01:00:00 end: 27/07/2007 02:00:00
+:action (refuel a1 c3) start: 27/07/2007 02:00:00 end: 08/08/2007 14:00:00
+:action (fly a1 c3 c5) start: 08/08/2007 14:00:00 end: 09/08/2007 05:00:00
+:action (debark p3 a1 c5) start: 09/08/2007 05:00:00 end: 09/08/2007 06:00:00

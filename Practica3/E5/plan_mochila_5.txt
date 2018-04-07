@@ -1,0 +1,144 @@
+zeswar@zeswar-CX61-2QC:~/Desktop/TSI/P3/Metric-FF$ ./ff -p ../E5/ -o dominio.pddl -f problema.pddl -O -g 1 -h 1
+
+ff: parsing domain file
+domain 'BELKAN' defined
+ ... done.
+ff: parsing problem file
+problem 'EJERCICIO1' defined
+ ... done.
+
+
+metric established (normalized to minimize): ((1.00*[RF2](DISTANCIA-TOTAL)) - () + 0.00)
+
+task contains conditional effects. turning off state domination.
+
+
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is  best-first on 1*g(s) + 1*h(s) where
+    metric is ((1.00*[RF2](DISTANCIA-TOTAL)) - () + 0.00)
+pasos al goal:    9    #acciones:    0   coste actual:    0.00    coste estimado:   45.00    tiempo:    0.00
+                  8    #acciones:    3   coste actual:    0.00    coste estimado:   45.00    tiempo:    0.00
+                  7    #acciones:    4   coste actual:    0.00    coste estimado:   45.00    tiempo:    0.00
+                  6    #acciones:    9   coste actual:   15.00    coste estimado:   45.00    tiempo:    0.00
+                  5    #acciones:   15   coste actual:   30.00    coste estimado:   45.00    tiempo:    0.00
+                  4    #acciones:   16   coste actual:   30.00    coste estimado:   45.00    tiempo:    0.00
+                  3    #acciones:   21   coste actual:   45.00    coste estimado:   45.00    tiempo:    0.00
+                  7    #acciones:   19   coste actual:   30.00    coste estimado:   45.00    tiempo:    0.00
+                  2    #acciones:   31   coste actual:   45.00    coste estimado:   45.00    tiempo:    0.01
+                  4    #acciones:   20   coste actual:   30.00    coste estimado:   45.00    tiempo:    0.02
+                  9    #acciones:   10   coste actual:   15.00    coste estimado:   45.00    tiempo:    0.02
+                  9    #acciones:    5   coste actual:    0.00    coste estimado:   45.00    tiempo:    0.06
+                  1    #acciones:   81   coste actual:   89.00    coste estimado:   89.00    tiempo:   23.82
+                  0    #acciones:   96   coste actual:   89.00    coste estimado:   89.00    tiempo:   23.85
+
+
+ff: found legal plan as follows
+
+step    0: COGER ZES MANZANA ZONE_00_00
+        1: GUARDAR MANZANA ZES
+        2: GIRA_DER NORTE ESTE ZONE_03_03
+        3: IR ZES ESTE ZONE_00_00 ZONE_00_01 PEDREGOSO BIKINI
+        4: SACAR MANZANA ZES
+        5: IR ZES ESTE ZONE_00_01 ZONE_00_02 PEDREGOSO BIKINI
+        6: GIRA_IZQ ESTE NORTE ZONE_03_03
+        7: GUARDAR MANZANA ZES
+        8: COGER ZES MANZANA ZONE_00_02
+        9: GIRA_DER NORTE ESTE ZONE_03_03
+       10: GIRA_DER ESTE SUR ZONE_03_03
+       11: SOLTAR ZES MANZANA ZONE_00_02
+       12: COGER ZES BIKINI ZONE_00_02
+       13: GUARDAR BIKINI ZES
+       14: SACAR MANZANA ZES
+       15: GIRA_IZQ SUR ESTE ZONE_03_03
+       16: GIRA_IZQ ESTE NORTE ZONE_03_03
+       17: GUARDAR MANZANA ZES
+       18: COGER ZES MANZANA ZONE_00_02
+       19: GIRA_DER NORTE ESTE ZONE_03_03
+       20: IR ZES ESTE ZONE_00_02 ZONE_00_03 AGUA BIKINI
+       21: SOLTAR ZES MANZANA ZONE_00_03
+       22: SACAR MANZANA ZES
+       23: ENTREGAR ZES MANZANA ZONE_00_03 PRINCIPE
+       24: COGER ZES ZAPATILLAS ZONE_00_03
+       25: GUARDAR ZAPATILLAS ZES
+       26: SACAR BIKINI ZES
+       27: SOLTAR ZES BIKINI ZONE_00_03
+       28: SACAR ZAPATILLAS ZES
+       29: SOLTAR ZES ZAPATILLAS ZONE_00_03
+       30: COGER ZES MANZANA ZONE_00_03
+       31: GUARDAR MANZANA ZES
+       32: COGER ZES ZAPATILLAS ZONE_00_03
+       33: GUARDAR ZAPATILLAS ZES
+       34: COGER ZES BIKINI ZONE_00_03
+       35: GUARDAR BIKINI ZES
+       36: SACAR ZAPATILLAS ZES
+       37: GIRA_IZQ ESTE NORTE ZONE_03_03
+       38: GIRA_IZQ NORTE OESTE ZONE_03_03
+       39: GUARDAR ZAPATILLAS ZES
+       40: SACAR MANZANA ZES
+       41: SOLTAR ZES MANZANA ZONE_00_03
+       42: IR ZES OESTE ZONE_00_03 ZONE_00_02 PEDREGOSO BIKINI
+       43: IR ZES OESTE ZONE_00_02 ZONE_00_01 PEDREGOSO BIKINI
+       44: COGER ZES MANZANA ZONE_00_01
+       45: GUARDAR MANZANA ZES
+       46: SACAR ZAPATILLAS ZES
+       47: SOLTAR ZES ZAPATILLAS ZONE_00_01
+       48: SACAR MANZANA ZES
+       49: SOLTAR ZES MANZANA ZONE_00_01
+       50: SACAR BIKINI ZES
+       51: SOLTAR ZES BIKINI ZONE_00_01
+       52: COGER ZES MANZANA ZONE_00_01
+       53: GUARDAR MANZANA ZES
+       54: COGER ZES ZAPATILLAS ZONE_00_01
+       55: GUARDAR ZAPATILLAS ZES
+       56: SACAR MANZANA ZES
+       57: SOLTAR ZES MANZANA ZONE_00_01
+       58: GIRA_DER OESTE NORTE ZONE_03_03
+       59: SACAR ZAPATILLAS ZES
+       60: GIRA_DER NORTE ESTE ZONE_03_03
+       61: SOLTAR ZES ZAPATILLAS ZONE_00_01
+       62: COGER ZES MANZANA ZONE_00_01
+       63: GUARDAR MANZANA ZES
+       64: COGER ZES ZAPATILLAS ZONE_00_01
+       65: GUARDAR ZAPATILLAS ZES
+       66: COGER ZES BIKINI ZONE_00_01
+       67: GUARDAR BIKINI ZES
+       68: SACAR MANZANA ZES
+       69: SOLTAR ZES MANZANA ZONE_00_01
+       70: SACAR ZAPATILLAS ZES
+       71: SOLTAR ZES ZAPATILLAS ZONE_00_01
+       72: COGER ZES MANZANA ZONE_00_01
+       73: GUARDAR MANZANA ZES
+       74: IR ZES ESTE ZONE_00_01 ZONE_00_02 PEDREGOSO BIKINI
+       75: SACAR BIKINI ZES
+       76: IR ZES ESTE ZONE_00_02 ZONE_00_03 AGUA BIKINI
+       77: SOLTAR ZES BIKINI ZONE_00_03
+       78: SACAR MANZANA ZES
+       79: ENTREGAR ZES MANZANA ZONE_00_03 PRINCIPE
+       80: COGER ZES MANZANA ZONE_00_03
+       81: GUARDAR MANZANA ZES
+       82: COGER ZES BIKINI ZONE_00_03
+       83: GUARDAR BIKINI ZES
+       84: SACAR MANZANA ZES
+       85: SOLTAR ZES MANZANA ZONE_00_03
+       86: GIRA_IZQ ESTE NORTE ZONE_03_03
+       87: SACAR BIKINI ZES
+       88: GIRA_IZQ NORTE OESTE ZONE_03_03
+       89: SOLTAR ZES BIKINI ZONE_00_03
+       90: COGER ZES MANZANA ZONE_00_03
+       91: GUARDAR MANZANA ZES
+       92: COGER ZES BIKINI ZONE_00_03
+       93: GUARDAR BIKINI ZES
+       94: SACAR MANZANA ZES
+       95: ENTREGAR ZES MANZANA ZONE_00_03 PRINCIPE
+     		Coste Total: 89.00
+
+
+time spent:    0.00 seconds instantiating 926 easy, 44 hard action templates
+               0.00 seconds reachability analysis, yielding 71 facts and 265 actions
+               0.00 seconds creating final representation with 70 relevant facts, 7 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+              47.70 seconds searching, evaluating 69008 states, to a max depth of 0
+              47.70 seconds total time
